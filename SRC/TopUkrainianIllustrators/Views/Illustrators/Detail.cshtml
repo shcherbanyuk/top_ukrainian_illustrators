@@ -1,11 +1,6 @@
 ﻿@{
     Layout = null;
-
-    var name = "Volodymyr Holozubov";
-    var from = "Kyiv";
-    var almaMater = "Taras Shevchenko State Art School";
-    var magnumOpus = "<p><strong>Maggie Magpie</strong> (1970, Kyiv, Veselka), <strong>Two chanticleers</strong> (1970, Kyiv, Veselka)</p>";
-    
+   
 }
 
 <!DOCTYPE html>
@@ -17,11 +12,11 @@
 </head>
 <body>
     <div>
-        <h1>@name</h1>
-        <h2>From: @from</h2>
-        <h2>Alma mater: @almaMater</h2>
+        <h1>@ViewBag.Name</h1>
+        <h2>From: @ViewBag.From</h2>
+        <h2>Alma mater: @ViewBag.AlmaMater</h2>
         <h2>Magnum opus:</h2>
-        <div>@Html.Raw(magnumOpus)</div>
+        <div>@Html.Raw(ViewBag.MagnumOpus)</div>
     </div>
 </body>
 </html>
