@@ -8,9 +8,13 @@ namespace TopUkrainianIllustrators.Controllers
 {
     public class IllustratorsController : Controller
     {
-        public string Detail()
+        public ActionResult Detail()
         {
-            return "Hello from IllustratorsController";
+            if (DateTime.Today.DayOfWeek == DayOfWeek.Sunday)
+            {
+                return Redirect("/");
+            }
+            return Content("Hello from IllustratorsController");
         }
     }
 }
