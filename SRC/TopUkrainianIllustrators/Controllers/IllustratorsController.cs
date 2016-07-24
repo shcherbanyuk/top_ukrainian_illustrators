@@ -8,5 +8,9 @@ namespace TopUkrainianIllustrators.Controllers
 {
     public class IllustratorsController : Controller
     {
+        public string Detail()
+        {
+            return "Hello from IllustratorsController";
+        }
     }
 }
