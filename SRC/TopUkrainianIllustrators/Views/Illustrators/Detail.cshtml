@@ -1,22 +1,12 @@
 ﻿@{
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Top Ukrainian Illustrators";
    
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
-</head>
-<body>
-    <div>
-        <h1>@ViewBag.Name</h1>
-        <h2>From: @ViewBag.From</h2>
-        <h2>Alma mater: @ViewBag.AlmaMater</h2>
-        <h2>Magnum opus:</h2>
-        <div>@Html.Raw(ViewBag.MagnumOpus)</div>
-    </div>
-</body>
-</html>
+<h1>@ViewBag.Name</h1>
+<h2>From: @ViewBag.From</h2>
+<h2>Alma mater: @ViewBag.AlmaMater</h2>
+<h2>Magnum opus:</h2>
+<div>@Html.Raw(ViewBag.MagnumOpus)</div>
