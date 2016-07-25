@@ -1,12 +1,15 @@
-﻿@{
+﻿@model TopUkrainianIllustrators.Models.Illustrators
+
+
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
-    ViewBag.Title = "Top Ukrainian Illustrators";
+    ViewBag.Title = Model.DisplayText;
    
 }
 
 
-<h1>@ViewBag.Name</h1>
-<h2>From: @ViewBag.From</h2>
-<h2>Alma mater: @ViewBag.AlmaMater</h2>
+<h1>@Model.Name</h1>
+<h2>From: @Model.From</h2>
+<h2>Alma mater: @Model.AlmaMater</h2>
 <h2>Magnum opus:</h2>
-<div>@Html.Raw(ViewBag.MagnumOpus)</div>
+<div>@Html.Raw(Model.MagnumOpusHtml)</div>

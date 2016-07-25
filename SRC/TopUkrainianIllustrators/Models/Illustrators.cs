@@ -17,7 +17,7 @@ namespace TopUkrainianIllustrators.Models
         {
             get
             {
-                return Name + From;
+                return Name;
             }
         }
         public string CoverImageFileName
