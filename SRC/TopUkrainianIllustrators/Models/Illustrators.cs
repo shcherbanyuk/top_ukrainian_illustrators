@@ -24,7 +24,7 @@ namespace TopUkrainianIllustrators.Models
         {
             get
             {
-                return Name.Replace("", "-").ToLower() + ".jpg";
+                return Name.ToLower() + ".jpg";
             }
         }
     }

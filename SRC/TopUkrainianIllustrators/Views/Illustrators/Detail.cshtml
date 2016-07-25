@@ -7,9 +7,21 @@
    
 }
 
+<h2>@Model.DisplayText</h2>
 
-<h1>@Model.Name</h1>
-<h2>From: @Model.From</h2>
-<h2>Alma mater: @Model.AlmaMater</h2>
-<h2>Magnum opus:</h2>
-<div>@Html.Raw(Model.MagnumOpusHtml)</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="well">
+            <h5><label>Name:</label> @Model.Name</h5>
+            <h5><label>From:</label> @Model.From</h5>
+            <h5><label>Alma mater:</label> @Model.AlmaMater</h5>
+            <h5>Magnum opus:</h5>
+            <div>@Html.Raw(Model.MagnumOpusHtml)</div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <img src="/Images/@Model.CoverImageFileName"
+             alt="@Model.DisplayText" class="img-responsive" />
+    </div>
+</div>
+

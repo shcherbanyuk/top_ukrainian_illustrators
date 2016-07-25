@@ -119,7 +119,7 @@
     <Content Include="Content\site.css" />
     <Content Include="Fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Images\holozubiv.png" />
+    <Content Include="Images\holozubiv.jpg" />
     <Content Include="Images\lavro.jpg" />
     <Content Include="Images\lehkobyt.jpg" />
     <Content Include="obj\Debug\TopUkrainianIllustrators.csproj.FileListAbsolute.txt" />
