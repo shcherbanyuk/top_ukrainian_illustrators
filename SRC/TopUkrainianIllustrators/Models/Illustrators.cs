@@ -12,5 +12,20 @@ namespace TopUkrainianIllustrators.Models
         public string From { get; set; }
         public string AlmaMater { get; set; }
         public string MagnumOpusHtml { get; set; }
+
+        public string DisplayText
+        {
+            get
+            {
+                return Name + From;
+            }
+        }
+        public string CoverImageFileName
+        {
+            get
+            {
+                return Name.Replace("", "-").ToLower() + ".jpg";
+            }
+        }
     }
 }
